@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+    </head>
+    <body>
+        <%- include('navbar', {links: links}) %>
+        <h1>All Categories</h1>
+        <% categories.forEach(category => { %>
+            <div class="category-card">
+                <p><%= category.category_name %></p>
+                <% }) %>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+    </head>
+    <body>
+        <%- include('navbar', {links: links}) %>
+        <h1>All Product Families</h1>
+        <% prodfam.forEach(prodfam => { %>
+            <div class="prodfam-card">
+                <p><%= prodfam.family_name %></p>
+            </div>
+        <% }) %>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+    </head>
+    <body>
+        <%- include('navbar', {links: links}) %>
+        <h1>All Brands</h1>
+        <% brands.forEach(brand => { %>
+            <div class="brand-card">
+                <p><%= brand.brand_name %></p>
+                <% }) %>
+    </body>
+</html>

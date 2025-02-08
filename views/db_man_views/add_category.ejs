@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Database Management</title>
+</head>
+<body>
+    <div>
+        <%- include('navbar', {links: links}) %>
+        <h1>Database Management</h1>
+        <div class="db-btns">
+            <a href="/db_manipulation/add_product" class="db-man-btn">Add Product</a>
+            <a href="/db_manipulation/add_brand" class="db-man-btn">Add Brand</a>
+            <a href="/db_manipulation/add_category" class="db-man-btn">Add Category</a>
+            <a href="/db_manipulation/add_product_family" class="db-man-btn">Add Product Family</a>
+        </div>
+        <h1>Add Brand</h1>
+        <form action="/db_manipulation/add_category" method="POST">
+            <label for="product-name">Category Name:</label>
+            <input type="text" id="category-name" name="category-name" placeholder="Category Name">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
